@@ -22,7 +22,7 @@ const Register = () => {
     data.phone = `+91${data.phone}`;
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/v1/user/register",
+        "https://finance-web-5s0d.onrender.com/api/v1/user/register",
         data,
         {
           withCredentials: true,
