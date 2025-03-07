@@ -8,11 +8,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-
+# Environment Variables
 .env
+
+# Dependencies
 node_modules
-dist
-dist-ssr
+
+# Build Files
+dist/
+dist-ssr/
 *.local
 
 # Editor directories and files
