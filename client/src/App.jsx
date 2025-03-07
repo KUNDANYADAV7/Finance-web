@@ -71,6 +71,9 @@ const App = () => {
       try {
         const res = await axios.get("https://finance-web-5s0d.onrender.com/api/v1/user/me", {
           withCredentials: true,
+          headers: {
+        "Content-Type": "application/json",
+    },
         });
         setUser(res.data.user);
         setIsAuthenticated(true);
